@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.rujal.github.plugin</id>
+    <name>github-plugin</name>
+    <vendor email="shrestharujal1928@gmail.com" url="#">YourCompany</vendor>
+
+    <description>Plugin for github action to make our work easier with git through UI</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="GitHubPlugin" class="com.rujal.github.plugin.GitHubPlugin" text="GitHubPlugin">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
